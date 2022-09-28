@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Classe</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='style/output.css') }}">
+
+</head>
+<body>
+
+    <input class="c_check" type="checkbox" id="start">
+    <input class="c_check" type="checkbox" id="finish">
+    <div class="form_progress"><!--add student name-->
+  </div>
+    
+    <div class="form_container">
+      <div class="c-stream">
+        <div class="instructions"><p id="instruction-text">Welcome</p></div>
+        <div class="video" style="background-color: black;"><canvas id="canvasOutput"></canvas><video autoplay="true" id="videoElement"></video></div>
+      </div>
+      <form class="c-form" action="">
+        <div class="form_group">
+          <label class="form_labels" for="username">
+                        <input
+                            type="text"
+                            id="username"
+                            class="form_inputs"
+                            placeholder=" "
+                            required>
+    
+                        <label class="form_next" for="finish" role="button">
+                            <span class="form_next_icon"></span>
+                        </label>
+    
+          <span class="form_groupLabel">Whats your name??</span>
+          <b class="form_border"></b>
+          </label>
+        </div>
+    
+        <label class="form_toggle" for="start">Register<span class="form_toggle_icon"></span></label>
+      </form>
+    </div>
+</body>
+<script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+
+<script type="text/javascript" src="{{ url_for('static',filename='js/script.js') }}" ></script>
+</html>

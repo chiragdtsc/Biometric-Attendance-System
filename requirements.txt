@@ -1,0 +1,11 @@
+Flask==2.0.2
+Flask-SocketIO==5.1.1
+numpy==1.21.4
+opencv-contrib-python==4.5.4.58
+opencv-python==4.5.4.58
+Pillow==8.2.0
+python-engineio==4.3.0
+python-socketio==5.4.1
+Werkzeug==2.0.2
+pytest
+requests
